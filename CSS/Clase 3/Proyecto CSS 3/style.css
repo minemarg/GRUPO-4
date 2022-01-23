@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+/*Estilos Generales*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+   /* overflow: hidden;*/
+ }
+
+/*html{
+     width: 200vw;
+}*/
+
+
+ a{
+    text-decoration: none;
+ }
+
+ /*contenido*/
+
+ h1{
+    text-align: center;
+    margin-top: 20px;
+    color:#3214dc;
+    letter-spacing: 5px;
+    border: 2px solid #1432dc;
+}
+
+.bold{
+    font-weight: 700;
+    text-shadow: 0px 0px 5px white;
+}
+
+.span{
+    color:cyan;
+ }
+
+/* cards */
+
+.card{
+    width: 600px;
+    /*height: 250px;*/
+    margin: 20px auto;
+    /*background-image: linear-gradient(rgb(255, 0, 119), rgb(255, 0, 255), rgb(0, 0, 0));*/
+    color:white;
+    padding: 15px;
+    box-shadow: 0px 0px 10px #f5f5f5;
+    border-radius: 5px;
+    /*overflow: scroll;*/
+}
+
+.card_subtitle{
+    font-size: 35px;
+    border-bottom: 3px solid #ffffff;
+    margin-bottom: 15px;
+}
+
+.card_text{
+    font-family: 300;
+    text-shadow: 0 0 3px #000000;
+    text-align: justify;
+}
+
+.card_link{
+    display: block;
+    border: 2px solid white;
+    width: max-content;
+    padding: 5px 20px;
+    margin-top: 20px;
+    color: white;
+    transition: .2s;
+}
+
+.card1{
+    background-image: linear-gradient(rgba(255, 0, 0, 0.068),rgba(0, 0, 255, 0.089)),url(img/imagendefondo1.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.card_link--hover1:hover{
+    background-color: #5623ce;
+}
+
+
+.card2{
+    background-image: linear-gradient(rgba(128, 27, 27, 0.295),rgba(147, 197, 81, 0.089)),url(img/imagendefondo2.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.card_link--hover2:hover{
+    background-color: #100250;
+}
