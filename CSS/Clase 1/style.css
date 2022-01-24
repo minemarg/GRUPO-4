@@ -1,0 +1,69 @@
+h1{
+    color:royalblue;
+    background-color: greenyellow;
+    font-size: 20px;
+    border: 2px solid black;
+    
+}
+
+
+a{
+    color:dodgerblue;
+}
+
+.texto{
+    color:blue
+}
+
+#texto2{
+    color:black
+}
+
+
+header {
+    color: aqua;
+}
+
+
+.Contenedor {
+    background-color: brown;
+    color: whitesmoke;
+
+}
+
+.Subtitulo{
+    color: red;
+}
+
+.Subtitulo{
+    color: palevioletred;
+}
+
+
+span .Prueba-especificidad{
+    color: magenta;
+
+}
+
+.Prueba-especificidad{
+    color:rgb(78, 34, 49);
+}
+
+
+.especifidad2-2-clase{
+    color:indianred;
+}
+
+
+#especifidad2-2-id{
+    color:royalblue;
+}
+
+h3{
+    color:purple;
+}
+
+div h3{
+    color: red
+}
+
