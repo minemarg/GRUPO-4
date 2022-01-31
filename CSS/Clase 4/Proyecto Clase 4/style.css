@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 200vh;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+.hero{
+    height: 100vh;
+    background-image: linear-gradient(#cfc8cd00, rgba(23, 225, 240, 0)), url(img/Imagen\ de\ Fondo2.jpg);
+    background-size:auto;
+    background-position: center;
+    position: relative;
+}
+
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.nav{
+    background-color: rgba(255, 30, 218, 0.671);
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 100;
+}
+
+.nav_container{ 
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_item{
+    list-style: none;
+    height: 50px;
+    width: 100%;   
+}
+
+.nav_link{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: violet;
+    transition: .2s;
+}
+
+.nav_link:hover{
+    background-color: whitesmoke;
+}
+
+/*hero main*/
+
+.hero_main{
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: whitesmoke;  
+}
+
+.subtitle{
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 300px;
+    background-image: linear-gradient(#ff00aa6b,#0000ff5b), url(img/Imagen\ de\ Fondo3.jpg);
+    background-size: cover;
+    padding: 40px;
+    margin: 50px 0;
+    color: white;
+    box-shadow: 0px 0px 10px #00000054;
+}
+
+.card-2{
+    background-image: linear-gradient(#ff00aaa1,#0000ff5b), url(img/Imagen\ de\ Fondo4.jpg);
+}
+
+.card-3{
+    background-image: linear-gradient(#ff00aa6b,#0000ff5b), url(img/Imagen\ de\ Fondo1.jpg);
+}
+
+.card_link{
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10px 20px;
+    display: block;
+    width: max-content;
+    margin-top: 15px;
+    transition: .2px;
+}
+
+.card_link:hover{
+    background-color: #8732cd;
+}

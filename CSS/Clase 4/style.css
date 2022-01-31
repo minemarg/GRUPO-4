@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 200vh;
+}
+
+.positions{
+    border:5px solid black;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    position: relative;
+    /*se usa este position: relative; en este padre para que el .absolute se contenga*/
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: blueviolet;
+    text-align: center;
+    line-height: 150px;
+}
+
+.relative{
+    background-color: cadetblue;
+    position: relative;
+
+    /*left: 100px;
+    top: 100px;
+    right: 100px;
+    bottom: 100Px,
+
+    z-index: 1;
+
+    TE PERMITE MOVER EL ELEMENTO RELATIVO A SU POSICION ORIGINAL*/
+}
+
+.absolute{
+    background-color: lawngreen;
+    position:absolute;
+    /*left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0,
+   */
+    bottom:0;
+    right: 0;
+}
+
+.fixed{
+    background-color: orange;
+    /*position: fixed;
+    top: 0;
+    width: 100%; 
+    z-index:2; */   
+}
+
+.flex{
+    height: 500px;
+    border: 5px solid crimson;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    display: flex;
+
+  /*lo deja en columna, sin el display: flex;
+    flex-direction: column;
+    flex-direction: colum-reverse; 
+    lo pone horizontal pero al contrario:
+    flex-direction: row-reverse;*/
+    
+    justify-content: space-around;
+
+    /*justify-content: puede ser center, end, star
+    justify-content: center;
+    justify-content: end;
+    justify-content: star;
+
+    tambien tiene otras propiedas el justify-content=
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly; */
+    
+    gap: 20px;
+    
+    /*para separar en FLEX no se usa margin, se usa gap=
+    gap: 10px; */
+     
+    align-items: center;
+    flex-wrap: wrap;
+    align-content:space-around;
+    /*el align-conten: solo se usa cuando usamos el flex-wrap*/
+  
+}
+
+.box-f{
+    width: 200px;
+    height: 200px;
+    background-color: indianred;
+    text-align: center;
+}
+
+.box-f1{
+    background-color: fuchsia;
+    /*order: 2;*/
+}
+
+.box-f2{
+    background-color: mediumaquamarine;
+    /*order:1;*/
+}
+
+
+.box-f3{
+    background-color:orange;
+    /*order:4;*/
+}
+
+.box-f4{
+    background-color: dodgerblue;
+    /*order:3;*/
+}
+
+/* Menu */
+
+
+.menu{
+    background-color: rgb(136, 190, 245);
+    height: 70px;
+}
+
+.menu_container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_item{
+    height: 100%;
+    width:100%;
+    list-style: none;
+}
+
+.menu_link{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.menu_link:hover{
+    background-color: dodgerblue;
+}
