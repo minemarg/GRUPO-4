@@ -17,7 +17,6 @@ body{
     max-width: 1200px;
 }
 
-
 .hero{
     height: 100vh;
     background-image: linear-gradient(#cfc8cd00, rgba(23, 225, 240, 0)), url(img/Imagen\ de\ Fondo2.jpg);
@@ -25,7 +24,6 @@ body{
     background-position: center;
     position: relative;
 }
-
 
 .wave{
     position: absolute;
@@ -80,7 +78,6 @@ body{
     text-align: center;
     margin: 20px 0;
 }
-
 
 .cards{
     display: flex;
