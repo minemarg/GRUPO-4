@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+html{
+    font-size: 10px;
+}
+
+.container{
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid_container{
+    padding: 10px 0;
+    height: 100vh;
+    display: grid;
+    gap:10px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template: 
+        "img1 img1 img2 img2"
+        "img1 img1 img3 img4"
+        "img5 img5 img5 img4"
+        
+    ;
+}
+
+.grid_figure{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    cursor:pointer;
+    
+}
+
+.grid_figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid_figure:nth-last-of-type(1){
+    grid-area: img1;
+}
+
+.grid_figure:nth-last-of-type(2){
+    grid-area: img2;
+}
+
+.grid_figure:nth-last-of-type(3){
+    grid-area: img3;
+}
+
+.grid_figure:nth-last-of-type(4){
+    grid-area: img4;
+}
+
+.grid_figure:nth-last-of-type(5){
+    grid-area: img5;
+}
+
+.fondo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
+    transition: .4s;
+}
+
+.grid_figure:hover .fondo{
+    transform: translateY(0);
+}
+
+.grid_figure:nth-last-of-type(1) .fondo{
+   background-image: linear-gradient(#d0ff0034,rgba(0, 162, 255, 0.507));
+}
+
+.grid_figure:nth-last-of-type(2) .fondo{
+    background-image: linear-gradient(#8b489134,#00ff7381);
+ }
+
+.grid_figure:nth-last-of-type(3) .fondo{
+    background-image: linear-gradient(#5900ff62,#88243581);
+ }
+ 
+ .grid_figure:nth-last-of-type(4) .fondo{
+    background-image: linear-gradient(#5900ff52,rgba(255, 255, 0, 0.466));
+ }
+
+ .grid_figure:nth-last-of-type(5) .fondo{
+    background-image: linear-gradient(#d0ff0069,rgba(0, 162, 255, 0.452));
+ }
+ 
+
+ .fondo a{
+     display: flex;
+     width: 100%;
+     height: 100%;
+     justify-content: center;
+     align-items: center;
+     text-decoration: none;
+     font-size: 3rem;
+     color: white;
+     font-weight: bold;
+     text-shadow: 0px 0px 3px rgb(43, 35, 35);
+ }
+
+
+@media screen and (max-width: 700px) {
+    .grid_container{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(5,300px);
+        grid-template: 
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"            
+        ;
+    }
+
+    .fondo{
+        transform: translateX(-100%);
+
+    }
+
+    .grid_figure:hover .fondo{
+        transform: translate(0);
+    }
+
+
+}
